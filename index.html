@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Edad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="inputs" id="inputs">
+            <article>
+                <h1>Calculadora de Edad</h1>
+                <h3>Introduce tu fecha de nacimiento dia, mes y año</h3>
+            </article>
+            <article class="años">
+                <label for="current-year">Año:</label>
+                <input type="number" id="añoUser">
+                <label for="current-year">Mes:</label>
+                <input type="number" id="mesUser">
+                <label for="current-year">Dia:</label>
+                <input type="number" id="diaUser">
+            </article>
+            <article class="hoy">
+                <h3>La fecha de hoy es: </h3>
+                <p id="dateNow"></p>
+            </article>
+        </section>
+        <button id="calcular">Calcular Edad</button>
+        <section class="resultado" id="results">
+            <article>
+                <h3><span id="resultadoFinal"></span></h3>
+            </article>
+        </section>
+        <button id="recargar">Calcular otra edad</button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
