@@ -35,17 +35,31 @@ function obtenerEdad() {
         alert("Año inválido");
         return;
     }
+    const añoActual = new Date().getFullYear();
+
+    if(añoValue > añoActual){
+        alert("año invalido")
+        return;
+    }
 
     let mensaje = "";
 
     if (añoValue >= 2000) {
-        mensaje += " y perteneces a la generación milenial.";
+        mensaje += " y perteneces a la generación milenial, y te quedan maximo 50 años de vida.";
     } else if (añoValue >= 1981) {
-        mensaje += " y perteneces a la generación X.";
+        mensaje += " y perteneces a la generación X  y te quedan maximo 30 años de vida.";
     } else if (añoValue >= 1965) {
-        mensaje += " y perteneces a la generación baby boomer.";
+        mensaje += " y perteneces a la generación baby boomer  y te quedan maximo 10 años de vida.";
     } else {
-        mensaje += " y perteneces a la generación anterior a los baby boomers.";
+        mensaje += " y perteneces a la generación anterior a los baby boomers y queda menos de 1 mes de vida.";
+    } 
+
+    if(mesValue > 12){
+        alert("mes invalido")
+        return;
+    } if (diaValue > 31 || diaValue <= 0) {
+        alert("dia invalido")
+        return;
     }
 
     sectionInputs.style.display = 'none';
